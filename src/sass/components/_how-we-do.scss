@@ -1,0 +1,141 @@
+.how-we-do {
+//   display: flex;   
+}
+
+.list-name {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  
+//   text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+
+  @media screen and(min-width: 1280px) {
+    
+    align-items: flex-start;
+  }
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px ) {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: -20px;
+    margin-left: -27px;
+  }
+}
+
+.card-item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  // background-color: black;
+//   @media screen and(min-width: 480px) {
+//     width: 280px;
+//     // margin-top: 15px;
+//     margin-left: 30px;
+//   }
+
+  @media screen and(min-width: 768px) {
+    width: 334px;
+    margin-top: 20px;
+    margin-left: 27px;
+
+    &:nth-child(n + 5) {
+      margin-bottom: 0;
+    }
+  }
+  
+
+  @media screen and(min-width: 1280px) {
+    width: 425px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+    &:nth-child(n + 6) {
+      margin-bottom: 0;
+    }
+  }
+
+  transition: background-color $timing-function;
+}
+
+.card-item:hover {
+  background-color: $orange-style-color;
+}
+
+.card-link {
+  padding: 30px 115px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-animals {
+  fill: $orange-style-color;
+  align-items: center;
+}
+
+.card-item:hover {
+  fill: $white-color;
+}
+
+.card-name {
+  padding: 0 20px 20px;  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: $primary-text-color;
+}
+
+.card-item:hover .card-name{
+  color: $white-color;
+}
+
+.card-link-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-line {
+  fill: $orange-style-color;  
+}
+
+.card-item:hover .card-line {
+  fill: $white-color;
+}
+
+.card-item:hover .card-animals {
+  fill: $white-color;
+}
+
+.card-text {
+  padding: 20px 20px 20px; 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: $secundary-text-color;  
+}
+
+.card-item:hover .card-text {
+  color: $white-color;
+}
