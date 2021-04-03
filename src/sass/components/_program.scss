@@ -1,5 +1,6 @@
 .section-program {
   min-width: 100%;
+  padding-top: 50px;
   padding-bottom: 424px;
   background-color: $bg-color;
   background-image: url(../../src/images/program.jpg);
@@ -8,9 +9,6 @@
   background-position: bottom 290px right -18px;
   overflow: hidden;
 
-  @media screen and(max-width:768px) {
-    padding-top: 50px;
-  }
   @media screen and(min-width:768px) and (max-width: 1279px) {
     padding-top: 60px;
   }
