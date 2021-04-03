@@ -10,10 +10,11 @@
   margin-right: auto;
 
   @media screen and(min-width:1280px) {
+    max-width: 1400px;
     padding-top: 30px;
   }
 
-  @media screen and(max-width:1280px) {
+  @media screen and(max-width:1279px) {
     padding-top: 40px;
   }
 }
@@ -28,6 +29,17 @@
   max-width: 100%;
   display: inline-block;
 }
+
+.nav__logo-icon {
+  width: 22px;
+  height: 30px;
+
+  @media screen and (max-width: 767px) {
+    width: 14px;
+    height: 19px;
+  }
+}
+
 .nav__logo-hell,
 .nav__logo-en {
   font-weight: 800;
@@ -36,6 +48,10 @@
   letter-spacing: 0.04em;
 
   color: $primary-text-color;
+
+  @media screen and(max-width:767px) {
+    font-size: 17px;
+  }
 }
 
 .nav__cont-text {
@@ -52,6 +68,10 @@
     text-transform: uppercase;
 
     color: $orange-style-color;
+
+    @media screen and(max-width:767px) {
+      font-size: 5px;
+    }
   }
 
   &--en {
@@ -62,6 +82,10 @@
     text-transform: uppercase;
 
     color: $primary-text-color;
+
+    @media screen and(max-width:767px) {
+      font-size: 5px;
+    }
   }
 }
 
@@ -71,7 +95,7 @@
 
   width: 648px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 
   &__link {
     font-weight: 700;
@@ -80,14 +104,15 @@
 
     text-transform: uppercase;
 
-    color: $secundary-text-color;
+    color: $secondary-text-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $orange-style-color;
     }
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
@@ -125,10 +150,10 @@
 
   color: $orange-style-color;
 
-  @media screen and(max-width:1280px) {
+  @media screen and(max-width:1279px) {
     margin-right: 40px;
   }
-  @media screen and(max-width:780px) {
+  @media screen and(max-width:767px) {
     display: none;
   }
 }
