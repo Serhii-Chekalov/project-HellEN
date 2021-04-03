@@ -1,21 +1,36 @@
 .section-program {
-  min-width: 100%;
+  max-width: 100%;
   padding-top: 50px;
   padding-bottom: 424px;
   background-color: $bg-color;
-  background-image: url(../images/program.jpg);
+  background-position: bottom 330px right -8px;
+  background-image: url(../images/program-mobile.png);
   background-repeat: no-repeat;
-  background-size: 143px 170px;
-  background-position: bottom 290px right -18px;
   overflow: hidden;
 
-  @media screen and(min-width:768px) {
-    padding-top: 60px;
-    background-image: url(../images/program2x.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/program-mobile@2x.png);
   }
-  @media screen and (min-width: 1280px) {
+
+  @media screen and(min-width:$tablet) {
+    padding-top: 60px;
+    background-size: 384px 280px;
+    background-position: bottom 330px right -18px;
+    background-image: url(../images/program-tablet.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program-tablet@2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
     padding-top: 130px;
-    background-image: url(../images/program3x.jpg);
+    background-size: 760px;
+    background-position: bottom 110px left -250px;
+    background-image: url(../images/program-desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program-desktop@2x.png);
+    }
   }
 }
 
@@ -27,11 +42,11 @@
   text-align: center;
   color: $white-color;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     margin-bottom: 52px;
     text-align: left;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 46px;
     margin-bottom: 160px;
   }
@@ -49,13 +64,13 @@
       position: absolute;
       height: 93%;
       width: 1px;
-      background-color: #546264;
+      background-color: $white-color;
       left: 50px;
       top: 10px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
     padding-left: 118px;
 
     &::before {
@@ -63,13 +78,13 @@
       position: absolute;
       height: 90%;
       width: 2px;
-      background-color: #546264;
+      background-color: $white-color;
       left: 74px;
       top: 10px;
     }
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
@@ -79,7 +94,7 @@
       display: block;
       height: 2px;
       width: 103vw;
-      background-color: #546264;
+      background-color: $white-color;
       top: -60px;
       left: -60px;
     }
@@ -120,7 +135,7 @@
       transform: translateY(-50%);
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
     &::before {
       content: '';
       position: absolute;
@@ -135,7 +150,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 20px;
     line-height: 1.4;
     &::before {
@@ -154,10 +169,10 @@
 }
 .program-term {
   padding-left: 0;
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     display: flex;
   }
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     flex-direction: column;
   }
 }
@@ -184,10 +199,10 @@
     background-color: $orange-style-color;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-left: 30px;
     font-size: 20px;
-    line-height: 1.65;
+    line-height: 1.66;
     &::before {
       width: 20px;
       left: 0;
@@ -200,11 +215,11 @@
   &:not(:last-of-type) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
     width: 180px;
     margin-right: 50px;
   }
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     width: 240px;
   }
 }
@@ -216,7 +231,7 @@
   &:last-child {
     margin-bottom: 0px;
   }
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     margin-right: 50px;
   }
 }
@@ -228,8 +243,21 @@
   letter-spacing: 0.08em;
   color: $secundary-text-color;
   opacity: 0.5;
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     font-size: 18px;
     line-height: 1.55;
+  }
+}
+.container-images {
+  position: relative;
+}
+
+.program-images {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+  }
+  @media screen and(min-width: $desktop) {
   }
 }
