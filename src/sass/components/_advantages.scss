@@ -1,32 +1,27 @@
 /* "ОСОБЕННОСТИ" */
 
 .advantages {
-  width: 216px;
   padding: 40px 0;
-  margin-bottom: 30px;
 
-  @media screen and (min-width: $tablet) {
-    width: 688px;
-    padding: 50px 0;
-    margin: 0;
+  @media (min-width: $desktop) {
+    padding: 115px 0;
   }
-  @media screen and (min-width: $desktop) {
-    padding-top: 96px;
-    padding-bottom: 130px;
-    padding-right: 183px;
-    padding-left: 153px;
+  @media screen and (min-width: $tablet) {
+    padding: 50px 0;
   }
 }
 
-.advantages__text {
-  max-width: 146px;
+@media screen and (max-width: 767px) {
+  .advantages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages__item {
@@ -44,16 +39,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.advantages__icon::before {
-  content: '';
-  display: block;
-  position: absolute;
-}
-
-.advantages__icon::before {
-  display: none;
 }
 
 .advantages__text {
