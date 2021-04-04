@@ -1,0 +1,75 @@
+/* ОСОБЕННОСТИ */
+
+.advantages {
+  padding: 40px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 115px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 50px 0;
+  }
+
+  @media screen and (min-width: 767px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 216px;
+  }
+}
+
+.advantages__icon {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1279px) {
+    margin-right: 27px;
+  }
+}
+
+.advantages__text {
+  max-width: 240px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+.advantages__text {
+  position: absolute;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: -17px;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
