@@ -54,7 +54,7 @@
   background-color: $white-color;
 
   @media screen and(max-width:767px) {
-    width: 280px;
+    min-width: 280px;
   }
   @media screen and (min-width: $tablet) {
     justify-content: space-between;
