@@ -46,17 +46,7 @@
     }
   }
 }
-// .container-program {
-//   @media screen and(max-width: 767px) {
-//     width: 280px;
-//   }
-//   @media screen and (min-width: $tablet) {
-//     width: 688px;
-//   }
-//   @media screen and(min-width:$desktop) {
-//     width: 1314px;
-//   }
-// }
+
 .program__title {
   margin-bottom: 43px;
   font-weight: 800;
@@ -111,16 +101,6 @@
     display: flex;
     justify-content: space-between;
     padding-left: 0;
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   display: block;
-    //   height: 2px;
-    //   width: 100vw;
-    //   background-color: $white-color;
-    //   top: -60px;
-    //   left: -60px;
-    // }
   }
 }
 
