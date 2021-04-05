@@ -3,6 +3,23 @@
     <h2 class="about__title">Преподаватель</h2>
     <div class="teacher">
       <h3 class="teacher__title">Елена Морева</h3>
+      <div>
+        <picture class="teacher__photo">
+          <source
+            srcset="/images/desktop-teacher.jpg 1x, ./images/desktop-teacher@2x.jpg 2x"
+            media="(min-width: $desktop)"
+          />
+          <source
+            srcset="./images/tablet-teacher.jpg 1x, ./images/tablet-teacher@2x.jpg 2x"
+            media="(min-width: $tablet)"
+          />
+          <source
+            srcset="./images/mobile-teacher.jpg 1x, ./images/mobile-teacher@2x.jpg 2x"
+            media="(min-width:320px)"
+          />
+          <img class="teacher__img" src="./images/mobile-teacher.jpg" alt="фото-преподавателя" />
+        </picture>
+      </div>
       <ul class="teacher__list">
         <li class="teacher__item">Опыт подготовки учеников к ВНО - 6 лет</li>
         <li class="teacher__item">Собственный результат сдачи ВНО - 197 баллов 2 года подряд</li>
