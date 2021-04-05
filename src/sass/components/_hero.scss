@@ -12,9 +12,9 @@
   position: relative;
   overflow: hidden;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../../src/images/hero-mobil2x.png);
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../../src/images/hero-mobil2x.png);
+  // }
 
   @media screen and (min-width: 768px) {
     background-image: url(../../src/images/hero-tablet.png);
@@ -25,15 +25,20 @@
     margin-top: -94px;
   }
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../../src/images/hero-tablet2x.png);
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../../src/images/hero-tablet2x.png);
+  // }
 }
 
 .conteiner__hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 42px;
+  padding-left: 42px;
+  display: flex;
+  flex-direction: column;
+
   @media screen and (max-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
     padding-right: 20px;
     padding-left: 20px;
     display: flex;
@@ -41,20 +46,22 @@
     justify-content: center;
     align-items: center;
   }
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 42px;
-  padding-left: 42px;
-  display: flex;
-  flex-direction: column;
 }
 
 .hero__title {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.36;
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
   width: 280px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    width: 642px;
+  }
 }
 
 .hero__description {
@@ -62,6 +69,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.57;
+  letter-spacing: 0.08em;
   margin-bottom: 30px;
 
   &--jast {
@@ -82,10 +90,19 @@
   color: $white-color;
   background-color: $orange-style-color;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
   text-decoration: none;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    padding: 26px 26px;
+    max-width: 354px;
+  }
 }
 
 @media screen and(min-width: 1280) {
