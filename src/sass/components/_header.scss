@@ -1,14 +1,14 @@
 .header {
+  width: 100%;
+
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-
-  @media screen and(min-width:1280px) {
-    max-width: 1400px;
-  }
+  padding-bottom: 30px;
 
   @media screen and(min-width:768px) and(max-width:1279px) {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -19,8 +19,20 @@
 }
 
 .nav__logo {
-  max-width: 100%;
+  width: 135px;
   display: inline-block;
+
+  &--hellen {
+    margin-bottom: 6px;
+
+    @media screen and(max-width:767px) {
+      margin-bottom: 3px;
+    }
+  }
+
+  @media screen and(max-width:767px) {
+    width: 92px;
+  }
 
   &-icon {
     width: 22px;
@@ -44,20 +56,33 @@
     @media screen and(max-width:767px) {
       font-size: 17px;
     }
+
+    &--white {
+      color: $white-color;
+    }
   }
 
   &-text {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
     &--hell {
-      font-weight: 700;
-      font-size: 8px;
-      line-height: 1.25;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
       color: $primary-text-color;
 
-      @media screen and(min-width:1280px) {
+      @media screen and(min-width:768px) {
         color: $orange-style-color;
       }
+
+      @media screen and(max-width:767px) {
+        font-size: 5px;
+      }
+    }
+
+    &--white {
+      color: $white-color;
 
       @media screen and(max-width:767px) {
         font-size: 5px;
@@ -78,8 +103,6 @@
       }
     }
   }
-
-  z-index: 2;
 }
 
 .nav__cont-text {
@@ -122,10 +145,6 @@
       display: none;
     }
   }
-
-  /* &__link:not(:last-child) {
-    margin-right: 40px;
-  } */
 }
 
 .consultation {
