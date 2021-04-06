@@ -14,7 +14,6 @@
   }
 
   @media screen and (max-width: 767px) {
-
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -79,7 +78,7 @@
 /* ПРОБЛЕМЫ */
 
 .section-problems {
-  background-image: linear-gradient(to bottom, ($bg-color, 90%), ($white-color));
+  background-image: linear-gradient (to bottom, ($bg-color, 90%), ($white-color));
 }
 .problems {
   padding-top: 50px;
@@ -220,9 +219,10 @@
     line-height: 1.2;
     letter-spacing: 0.08em;
     color: $orange-style-color;
-    
-  @media screen and (max-width: 768px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
 }
