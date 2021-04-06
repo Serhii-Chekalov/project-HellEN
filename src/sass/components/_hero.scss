@@ -3,6 +3,8 @@
   margin-right: auto;
 
   overflow: hidden;
+  padding-top: 109px;
+  padding-bottom: 15vw;
   position: relative;
   background-image: url(../../src/images/hero-mobil.png), url(../../src/images/hero-line-tablet.png);
   background-repeat: no-repeat;
@@ -10,6 +12,7 @@
   padding-top: 110px;
 
   @media screen and (min-width: 768px) {
+
     background-image: url(../../src/images/hero-tablet.png),
       url(../../src/images/hero-line-tablet.png);
     background-position: top 171px left 374px, top 0px left 0;
@@ -122,4 +125,24 @@
 .hero__img {
   padding-bottom: 47px;
   min-width: 208px;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  background-image: url(../../src/images/hero-mobil.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../../src/images/hero-tablet.png);
+  }
+}
+
+.hero__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
