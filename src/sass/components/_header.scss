@@ -1,4 +1,9 @@
 .header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
 
   margin-left: auto;
@@ -138,7 +143,6 @@
   }
 
   &__button {
-    background-color: $white-color;
     border: none;
 
     @media screen and(min-width:1280px) {
