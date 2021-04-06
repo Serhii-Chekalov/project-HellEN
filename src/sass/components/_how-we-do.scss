@@ -55,18 +55,30 @@
   }
 
   @media screen and(min-width: 768px) {
+    // // width: 334px;
+    // margin-top: 20px;
+    // margin-left: 20px;
+
+    // flex-basis: calc(100% / 2 - 80px);
+    // width: 334px;
+    // // margin-left: 20px;
+    // // margin-top: 20px;
+
+    // &:nth-child(n + 5) {
+    //   // margin-bottom: 0;
+    // }
+
     // width: 334px;
     // margin-top: 20px;
     // margin-left: 20px;
 
     flex-basis: calc(100% / 2 - 80px);
     margin-left: 20px;
-    margin-top: 27px;
+    margin-top: 20px;  
 
     &:nth-child(n + 5) {
       // margin-bottom: 0;
     }
-   
   }
   
   @media screen and(min-width: 1280px) {
@@ -86,7 +98,7 @@
 
   transition: background-color $timing-function;
 
-  // outline: 1px solid green;
+  outline: 1px solid green;
 }
 
 .card__item:hover {
@@ -112,9 +124,9 @@
 .card__name {
   padding: 0 20px 20px;  
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4;
 
   text-align: center;
   letter-spacing: 0.08em;
@@ -155,7 +167,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.4;
 
 
   text-align: center;
