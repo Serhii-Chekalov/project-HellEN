@@ -4,22 +4,24 @@
   margin-right: auto;
 }
 
-.container--footer {
-  padding-top: 52px;
-  padding-bottom: 52px;
-  justify-content: space-between;
-  display: flex;
+.container {
+  &--footer {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    justify-content: space-between;
+    display: flex;
 
-  @media screen and(min-width:768px) and(max-width:1279px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+    @media screen and(min-width:768px) and(max-width:1279px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
 
-  @media screen and(max-width:767px) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    flex-direction: column;
-    align-items: center;
+    @media screen and(max-width:767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -43,22 +45,44 @@
       color: $primary-text-color;
 
       @media screen and (min-width: 1280px) {
+        margin-left: auto;
         font-size: 30px;
         line-height: 1.23;
       }
 
       @media screen and(min-width:768px) {
-        margin-left: auto;
-        /* padding-right: 24px; */
+        border-right: 1px solid $secondary-text-color;
+        margin-right: 24px;
+        padding-right: 24px;
       }
 
       @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-left: auto;
         font-size: 20px;
         line-height: 1.2;
       }
 
       @media screen and(max-width:767px) {
         margin-bottom: 30px;
+      }
+    }
+    &-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+
+      @media screen and(min-width:1280px) {
+        margin-right: 15px;
+      }
+
+      @media screen and(min-width:768px) and(max-width:1279px) {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media screen and(max-width:767px) {
+        width: 20px;
+        height: 20px;
       }
     }
   }
@@ -81,105 +105,27 @@
   }
 }
 
-.communication__footer-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-
-  @media screen and(min-width:1280px) {
-    margin-right: 15px;
-  }
-
-  @media screen and(min-width:768px) and(max-width:1279px) {
-    width: 24px;
-    height: 24px;
-  }
-
-  @media screen and(max-width:767px) {
-    width: 20px;
-    height: 20px;
-  }
-}
-
 .socials {
   &__footer {
     width: 40px;
     display: flex;
     align-items: center;
-  }
-  &__image {
-    width: 40px;
+
     @media screen and(min-width:1280px) {
       margin-right: auto;
     }
-    @media screen and(min-width:768px) {
-      /* margin-left: 24px; */
-    }
+  }
+  &__image {
+    width: 40px;
   }
 }
 
-/* .communication {
-  @media screen and(min-width:1280px) {
-    width: 487px;
-  }
-
-  @media screen and(min-width:768px) and(max-width) {
-    width: 358px;
-  }
-
-  @media screen and(min-width:768px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  &__item {
-    padding: 24px;
-
-    @media screen and(max-width:767px) {
-      margin-bottom: 30px;
-    }
-  }
-  &__link {
-    display: flex;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.08em;
-
-    color: $primary-text-color;
-
-    @media screen and (min-width: 1280px) {
-      font-size: 30px;
-      line-height: 1.23;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      font-size: 20px;
-      line-height: 1.2;
-    }
-  }
-  &__icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-
-    @media screen and(min-width:1280px) {
-      margin-right: 15px;
-    }
-
-    @media screen and(min-width:768px) and(max-width:1279px) {
-      width: 24px;
-      height: 24px;
-    }
-
-    @media screen and(max-width:767px) {
-      width: 20px;
-      height: 20px;
-    }
-  }
-} */
-
 .copyright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  background-color: $bg-color;
+
   &__txt {
     color: $secondary-text-color;
 
@@ -187,9 +133,4 @@
       text-align: center;
     }
   }
-
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 100%;
-  background-color: $bg-color;
 }
