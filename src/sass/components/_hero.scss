@@ -1,7 +1,7 @@
 .hero {
   overflow: hidden;
   padding-top: 109px;
-  padding-bottom: 15vw;
+  padding-bottom: 35vw;
   position: relative;
 
   // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -10,6 +10,7 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 158px;
+    padding-bottom: 8vw;
   }
 
   // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -103,24 +104,35 @@
   min-width: 208px;
 }
 
-
 .hero__content {
   position: relative;
   z-index: 2;
   background-image: url(../../src/images/hero-mobil.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right center;
+  background-position: center bottom 23px;
+  padding-bottom: 40vh;
 
   @media screen and (min-width: 768px) {
     background-image: url(../../src/images/hero-tablet.png);
+    background-position: right center;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../../src/images/hero-desktop.png);
+    background-position: right center;
+    padding-bottom: 0;
   }
 }
 
 .hero__bg {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -190px;
   z-index: 1;
 
+  @media screen and (min-width: 768px) {
+    left: 0;
+  }
 }
