@@ -1,8 +1,10 @@
 .section-program {
+  position: relative;
   max-width: 100%;
   padding-top: 50px;
   padding-bottom: 424px;
   background-color: $bg-color;
+  background-size: 137px;
   background-position: bottom 330px right -8px;
   background-image: url(../images/program-mobile.png);
   background-repeat: no-repeat;
@@ -14,8 +16,9 @@
 
   @media screen and(min-width:$tablet) {
     padding-top: 60px;
+    padding-bottom: 359px;
     background-size: 384px 280px;
-    background-position: bottom 330px right -18px;
+    background-position: bottom 300px right -18px;
     background-image: url(../images/program-tablet.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -23,13 +26,24 @@
     }
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 130px;
-    background-size: 760px;
-    background-position: bottom 110px left -250px;
+    padding-top: 120px;
+    padding-bottom: 363px;
+    background-size: 760px 502px;
+    background-position: bottom 40px left -270px;
     background-image: url(../images/program-desktop.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/program-desktop@2x.png);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $white-color;
+      top: 278px;
+      left: 0;
     }
   }
 }
@@ -88,16 +102,6 @@
     display: flex;
     justify-content: space-between;
     padding-left: 0;
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      height: 2px;
-      width: 103vw;
-      background-color: $white-color;
-      top: -60px;
-      left: -60px;
-    }
   }
 }
 
