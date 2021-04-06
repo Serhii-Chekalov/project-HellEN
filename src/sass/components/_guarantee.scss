@@ -4,13 +4,14 @@
     width: 100%;  
   } 
   @media screen and(min-width: 480px) {
-    width: 480px;  
+    // width: 480px;  
   }
   @media screen and(min-width: 768px) {
-    width: 703px;  
+    width: 100%;  
   } 
   @media screen and(min-width: 1280px) {
-    width: 1314px;  
+    // width: 1314px;  
+    width: 100%;
   } 
 }
 
@@ -33,6 +34,7 @@
 }
 
 .guarantee__list {
+  position: relative;
   padding: 30px 20px;
   background-color: #F1F1F1;
   @media screen and(min-width: 768px) {
@@ -53,47 +55,45 @@
 }
 
 .guarantee__item::before {
+  position: relative;
   margin-right: 20px;
   display: inline-flex;
   content: "";
   width: 20px;
   height: 20px;
+  z-index: 1;
   
   background-image: url('../../src/images/fier.png');
+
+  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border-bottom: 2px dotted red ;
+  // border-top: 1px dashed $secondary-text-color;
+  // border-inline-start: 2px dotted red ;
   //   outline: 1px solid tomato;
 }
 
-// .guarantee__item::before{
+.guarantee__border {
+  position: absolute;
+  top: 17%;
+  left: 1.2%;
+  height: 58%;
+  padding-right: 20px;
+  border-inline-end: 1px dashed $secondary-text-color;
+  z-index: 0;
+  @media screen and(min-width: 768px) {
+    top: 19%;
+    left: 67px;
+    height: 58%;
+  }
 
-//     content: " ";
-
-//     background: #33CCFF;
-
-//     width: 2px;
-
-//     height: 25px;
-
-//     float: left;
-
-//     margin-right: 10px;
-    
-// }
-
-// .guarantee__item::after {
-//   content: "";
-    
-//     display: block;
-//     width: 1px;
-//     height:10px ;
-//     left: 0;
-//     bottom: 0;
-//     background-color:tomato;
-
-// }
+  @media screen and(min-width: 1280px) {
+    top: 17%;
+    left: 100px;
+    height: 58%;
+  }
+}
  
 
 .guarantee__text {
