@@ -45,6 +45,7 @@
 }
 
 .problems__wrapper {
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
   background-color: $white-color;
   @media screen and (max-width: 767px) {
     padding-left: 30px;
@@ -81,7 +82,6 @@
   @media screen and (min-width: $desktop) {
   }
 }
-
 
 .problems__item {
   width: 236px;
