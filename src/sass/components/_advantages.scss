@@ -55,6 +55,7 @@
     width: 59px;
     height: 60px;
   }
+}
 
 
 .advantages__text {
@@ -85,83 +86,3 @@
     margin-top: 20px;
   }
 }
-
-/* ПРОБЛЕМЫ */
-
-.section-problems {
-  background-image: linear-gradient (to bottom, ($bg-color, 90%), ($white-color));
-}
-.problems {
-  padding-top: 50px;
-  background-color: $bg-color;
-
-  @media screen and (max-width: $tablet) {
-    padding: 50px 0;
-  }
-  @media screen and (max-width: $desktop) {
-    padding: 0;
-  }
-}
-
-.problems__colortext {
-  color: $orange-style-color;
-}
-
-.problems__title {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-  color: $white-color;
-
-  @media screen and (max-width: $desktop) {
-    max-width: 568px;
-    padding-top: 56px;
-    padding-bottom: 25px;
-    padding-left: 42px;
-    padding-right: 158px;
-    font-size: 20px;
-    line-height: 1.3;
-  }
-  @media screen and (max-width: $mobile) {
-    max-width: 280px;
-    padding-top: 50px;
-    // padding-bottom: 27px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 1.35;
-  }
-}
-
-.problems__text {
-  display: block;
-  margin-top: 5px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.08em;
-
-  color: $primary-text-color;
-
-  @media screen and (max-width: 1279px) {
-    width: 142px;
-    margin-left: 15px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 327px;
-    margin-left: -17px;
-    top: 15px;
-    font-size: 20px;
-    line-height: 1.65;
-    letter-spacing: 0.08em;
-    color: $orange-style-color;
-  }
-    @media screen and (max-width: 768px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-  }
