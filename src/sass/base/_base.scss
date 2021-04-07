@@ -54,7 +54,7 @@ address {
 }
 
 .container {
-  width: $mobile;
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
