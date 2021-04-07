@@ -6,21 +6,72 @@
   background-color: rgba(17, 21, 24, 1);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(black,0.6), rgba(black,0.6)),
-  url(../images/contacts-bg.jpg);
+  background-image: linear-gradient(to right, rgba(black,0.8), rgba(black,0.8)),
+  url(../images/contacts-mobil.jpg);
+  
+
+  @media screen and(min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(black,0.8), rgba(black,0.8)),
+  url(../images/contacts-tablet.jpg);
+  
+  padding-bottom: 71px;
+
+  
+  }
+
+  @media screen and(min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(black,0.8), rgba(black,0.8)),
+  url(../images/contacts-desktop.jpg);
+  
+  padding-bottom: 62px;
+  padding-top: 100px;
+
+  
+  }
 }
 
 .contacts__title {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
   margin-bottom: 30px;
+
+  @media screen and(min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.308;
+  }
+
+  @media screen and(min-width: $desktop) {
+    font-size: 46px;
+
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+
   margin-bottom: 30px;
+
+  @media screen and(min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+
+  @media screen and(min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.233;
+
+    margin-bottom: 56px;
+  }
 }
 
 .contacts__input {
-  display: block;
-  width: 100%;
   padding-left: 28px;
   padding-bottom: 16px;
   padding-top: 15px;
@@ -30,6 +81,21 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.214;
+  letter-spacing: 0.08em;
+
+  max-width: 390px;
+
+  @media screen and(min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+
+    padding-left: 40px;
+    padding-bottom: 23px;
+    padding-top: 23px;
+
+    min-width: 478px;
+    }
+  
 
   &:focus {
     outline: none;
@@ -40,31 +106,29 @@
   }
 }
 
-.contacts__input--name {
+.form__name {
   margin-bottom: 20px;
+
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 30px;
+    }
 }
 
-.contacts__input--tel {
+.form__tel {
   margin-bottom: 50px;
+
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 31px;
+    }
+
+    @media screen and(min-width:$desktop) {
+      margin-bottom: 80px;
+      }
 }
 
 input:invalid {
     border: red solid 1px;
   }
-
-.contacts__text {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.08em;
-}
-
-.contacts__title {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
-}
 
 .contacts__selected-text {
   color: $orange-style-color;
@@ -74,10 +138,18 @@ input:invalid {
   background-color: $orange-style-color;
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 14px 5px;
   color: #fff;
   border: none;
+
+  @media screen and(min-width:$desktop) {
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.14em;
+
+  padding: 26px;
+    }
 }

@@ -54,33 +54,20 @@ address {
 }
 
 .container {
-  width: 100%;
+  width: $mobile;
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and(max-width:768px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 768px) {
     padding-left: 40px;
     padding-right: 40px;
+    width: $tablet;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1400px;
+    width: $desktop;
   }
 }
 
-/* section {
-  min-width: 100%;
-  @media screen and(max-width:1280px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  @media screen and(min-width:1280px) {
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-} */
