@@ -26,7 +26,6 @@
   padding-bottom: 62px;
   padding-top: 100px;
 
-  
   }
 }
 
@@ -56,8 +55,6 @@
   line-height: 1.25;
   letter-spacing: 0.08em;
 
-  margin-bottom: 30px;
-
   @media screen and(min-width: $tablet) {
     font-size: 14px;
     line-height: 1.214;
@@ -66,7 +63,13 @@
   @media screen and(min-width: $desktop) {
     font-size: 30px;
     line-height: 1.233;
+  }
+}
 
+.contacts__text--margin {
+  margin-bottom: 30px;
+
+  @media screen and(min-width: $desktop) {
     margin-bottom: 56px;
   }
 }
