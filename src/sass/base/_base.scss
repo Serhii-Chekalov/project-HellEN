@@ -60,14 +60,14 @@ address {
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 40px;
     padding-right: 40px;
     width: $tablet;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: $desktop;
+  @media screen and (min-width: $desktop) {
+    max-width: 1400px;
   }
 }
 
