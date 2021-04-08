@@ -4,7 +4,6 @@
 }
 
 .reviews__data {
-  font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
@@ -16,6 +15,7 @@
   @media screen and(min-width: 768px) {
     font-size: 26px;
   }
+  
   @media screen and(min-width: 1280px){
     font-size: 46px;
   }
@@ -75,7 +75,6 @@
 
 .reviews__name {
   margin-top: 20px;  
-  font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 1.2;
@@ -179,7 +178,6 @@
 
 .reviews__thumb-too {
   margin-right: 30px;
-
 }
 
 .reviews__thumb-too:nth-child(n + 4) {
